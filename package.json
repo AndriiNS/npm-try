@@ -1,5 +1,5 @@
 {
-	"homepage": "http://",
+	"homepage": "https://andriins.github.io/figma3/",
 	"name": "fls-start",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
@@ -9,11 +9,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
-		"build": "gh-pages -d build",
+		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
-		"deploy": "gulp deployFTP --build",
-		"prebuild": "gulp build --build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
