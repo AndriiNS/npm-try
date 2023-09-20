@@ -1,3 +1,113 @@
 //====================================================================================================
+.page {
+	// .page__main
+
+	&__main {
+	}
+}
+.main-block {
+	// .main-block__container
+
+	&__container {
+		position: relative;
+	}
+
+	// .main-block__content
+
+	&__content {
+		padding-top: rem(250);
+		padding-bottom: rem(200);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+	}
+
+	// .main-block__title
+
+	&__title {
+		max-width: rem(830);
+	}
+
+	// .main-block__text
+
+	&__text {
+		width: rem(605);
+		color: #fff;
+		text-align: center;
+		font-family: Spartan;
+		margin-top: rem(69);
+		margin-bottom: rem(48);
+		font-weight: 400;
+		line-height: 180%; /* 32.4px */
+	}
+
+	// .main-block__form
+
+	&__form {
+	}
+
+	// .main-block__icons
+
+	&__icons {
+	}
+}
+.title {
+}
+.form {
+	// .form__input
+
+	&__input {
+	}
+
+	// .form__button
+
+	&__button {
+	}
+}
+.button {
+}
+.icons-main-block {
+	// .icons-main-block__item
+
+	&__item {
+	}
+
+	// .icons-main-block__item1
+
+	&__item1 {
+	}
+
+	// .icons-main-block__item2
+
+	&__item2 {
+	}
+
+	// .icons-main-block__item3
+
+	&__item3 {
+	}
+
+	// .icons-main-block__item4
+
+	&__item4 {
+	}
+
+	// .icons-main-block__item5
+
+	&__item5 {
+	}
+
+	// .icons-main-block__item6
+
+	&__item6 {
+	}
+
+	// .icons-main-block__item7
+
+	&__item7 {
+	}
+}
 
 //====================================================================================================

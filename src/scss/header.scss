@@ -1,7 +1,10 @@
 //====================================================================================================
 .header {
 	width: 100%;
+	height: rem(120);
 	position: fixed;
+	background-color: #263238;
+	z-index: 5;
 	top: 0;
 	left: 0;
 	@include adaptiveValue('padding-top', 60, 10);
@@ -9,7 +12,8 @@
 	// .header__container-big
 
 	&__container-big {
-		display: flex;
+		display: grid;
+		grid-template-columns: rem(300) 1fr rem(300);
 		align-items: center;
 		justify-content: center;
 	}
