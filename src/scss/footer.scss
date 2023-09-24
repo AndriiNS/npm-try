@@ -1,3 +1,159 @@
-//====================================================================================================
+.footer {
+	// .footer__container-big
 
-//====================================================================================================
+	&__container-big {
+		background: rgba(53, 64, 70, 0.5);
+	}
+
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__main
+
+	&__main {
+		display: flex;
+		@include adaptiveValue('padding-top', 68, 30);
+		@include adaptiveValue('padding-bottom', 100, 30);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+	}
+
+	// .footer__bottom
+
+	&__bottom {
+		display: flex;
+		@include adaptiveValue('padding-bottom', 55, 30);
+		@include adaptiveValue('padding-top', 55, 30);
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(15);
+	}
+
+	// .footer__copy
+
+	&__copy {
+		font-size: rem(12);
+		height: 16px;
+	}
+
+	// .footer__menu
+
+	&__menu {
+	}
+}
+.main-footer {
+	// .main-footer__info
+
+	&__info {
+		margin-top: rem(68);
+		width: rem(350);
+	}
+
+	// .main-footer__logo
+
+	&__logo {
+	}
+
+	// .main-footer__text
+
+	&__text {
+		margin-top: rem(24);
+	}
+
+	// .main-footer__form
+
+	&__form {
+		margin-top: rem(68);
+		width: rem(533);
+		margin-left: rem(180);
+	}
+
+	// .main-footer__contacts
+
+	&__contacts {
+		width: rem(176);
+		margin-top: rem(68);
+		margin-left: rem(160);
+	}
+
+	// .main-footer__social
+
+	&__social {
+	}
+
+	// .main-footer__label
+
+	&__label {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	// .main-footer__call
+
+	&__call {
+		margin-top: rem(68);
+		width: rem(100);
+		margin-left: rem(48);
+	}
+
+	// .main-footer__phone
+
+	&__phone {
+	}
+}
+.text {
+}
+.form-main {
+	// .form-main__text
+
+	&__text {
+		width: rem(337);
+	}
+
+	// .form-main__form
+
+	&__form {
+		margin-top: rem(24);
+	}
+}
+.form {
+	// .form__input
+
+	&__input {
+	}
+
+	// .form__button
+
+	&__button {
+	}
+}
+.button {
+}
+.social {
+	margin-top: rem(24);
+
+	// .social__item
+
+	&__item {
+	}
+}
+.menu-footer {
+	// .menu-footer__list
+
+	&__list {
+		display: flex;
+		gap: rem(40);
+	}
+
+	// .menu-footer__item
+
+	&__item {
+	}
+
+	// .menu-footer__link
+
+	&__link {
+		font-size: rem(14);
+	}
+}
