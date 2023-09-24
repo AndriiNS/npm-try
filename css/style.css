@@ -373,6 +373,138 @@ body {
   display: none;
 }
 
+.footer__container-big {
+  background: rgba(53, 64, 70, 0.5);
+}
+
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+@supports (padding-top: clamp( 1.875rem , 1.3035714286rem  +  2.8571428571vw , 4.25rem )) {
+  .footer__main {
+    padding-top: clamp( 1.875rem , 1.3035714286rem  +  2.8571428571vw , 4.25rem );
+  }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 1.3035714286rem  +  2.8571428571vw , 4.25rem )) {
+  .footer__main {
+    padding-top: calc(1.875rem + 2.375 * (100vw - 20rem) / 83.125);
+  }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 0.8223684211rem  +  5.2631578947vw , 6.25rem )) {
+  .footer__main {
+    padding-bottom: clamp( 1.875rem , 0.8223684211rem  +  5.2631578947vw , 6.25rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 0.8223684211rem  +  5.2631578947vw , 6.25rem )) {
+  .footer__main {
+    padding-bottom: calc(1.875rem + 4.375 * (100vw - 20rem) / 83.125);
+  }
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.9375rem;
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 1.4990601504rem  +  1.8796992481vw , 3.4375rem )) {
+  .footer__bottom {
+    padding-bottom: clamp( 1.875rem , 1.4990601504rem  +  1.8796992481vw , 3.4375rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.4990601504rem  +  1.8796992481vw , 3.4375rem )) {
+  .footer__bottom {
+    padding-bottom: calc(1.875rem + 1.5625 * (100vw - 20rem) / 83.125);
+  }
+}
+
+@supports (padding-top: clamp( 1.875rem , 1.4990601504rem  +  1.8796992481vw , 3.4375rem )) {
+  .footer__bottom {
+    padding-top: clamp( 1.875rem , 1.4990601504rem  +  1.8796992481vw , 3.4375rem );
+  }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 1.4990601504rem  +  1.8796992481vw , 3.4375rem )) {
+  .footer__bottom {
+    padding-top: calc(1.875rem + 1.5625 * (100vw - 20rem) / 83.125);
+  }
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  height: 16px;
+}
+
+.main-footer__info {
+  margin-top: 4.25rem;
+  width: 21.875rem;
+}
+
+.main-footer__text {
+  margin-top: 1.5rem;
+}
+
+.main-footer__form {
+  margin-top: 4.25rem;
+  width: 33.3125rem;
+  margin-left: 11.25rem;
+}
+
+.main-footer__contacts {
+  width: 11rem;
+  margin-top: 4.25rem;
+  margin-left: 10rem;
+}
+
+.main-footer__label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-footer__call {
+  margin-top: 4.25rem;
+  width: 6.25rem;
+  margin-left: 3rem;
+}
+
+.form-main__text {
+  width: 21.0625rem;
+}
+
+.form-main__form {
+  margin-top: 1.5rem;
+}
+
+.social {
+  margin-top: 1.5rem;
+}
+
+.menu-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.menu-footer__link {
+  font-size: 0.875rem;
+}
+
 .img1 {
   position: absolute;
   position: fixed;
